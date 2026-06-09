@@ -1,0 +1,21 @@
+// WAP to find x^n without pow () ?
+
+#include <iostream>
+using namespace std ;
+int main (){
+    int x, n;
+
+    cout << "Entre base = ";
+    cin >> n;
+    cout << "Entre power = ";
+    cin >> x;
+
+    int result = 1 ;
+
+    for (int i = 1; i <= n; i++){
+        result *= x ;
+
+    }
+cout << result ; 
+return 0 ;
+}
