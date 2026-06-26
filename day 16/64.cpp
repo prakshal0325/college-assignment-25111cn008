@@ -1,0 +1,29 @@
+// Write a program to Remove duplicates from array.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3, 2, 4, 5, 3, 1, 6};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Array after removing duplicates: ";
+
+    for (int i = 0; i < size; i++) {
+        bool duplicate = false;
+
+        
+        for (int j = 0; j < i; j++) {
+            if (arr[i] == arr[j]) {
+                duplicate = true;
+                break;
+            }
+        }
+
+        if (!duplicate) {
+            cout << arr[i] << " ";
+        }
+    }
+
+    return 0;
+}
